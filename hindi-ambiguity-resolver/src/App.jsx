@@ -5,7 +5,6 @@ import {
   Loader2, PenLine, FlaskConical
 } from "lucide-react";
 
-// ── Point this to your running backend ───────────────────────────────────────
 const API_URL = "http://localhost:8000";
 
 const TYPE_COLORS = {

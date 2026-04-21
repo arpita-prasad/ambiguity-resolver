@@ -31,13 +31,13 @@ from transformers import (
 from torch.optim import AdamW
 import os
 
-# ── Config ──────────────────────────────────────────────────────────────────
+# Config
 MODEL_NAME   = "bert-base-multilingual-cased"
 DATA_PATH    = "data/training_data.json"
 SAVE_PATH    = "saved_model"
 MAX_LEN      = 128
 BATCH_SIZE   = 4
-EPOCHS       = 15          # More epochs since dataset is small
+EPOCHS       = 15
 LR           = 2e-5
 NUM_LABELS   = 8
 
@@ -52,7 +52,7 @@ LABEL_NAMES = [
     "MORPHOLOGICAL AMBIGUITY",
 ]
 
-# ── Dataset ──────────────────────────────────────────────────────────────────
+# Dataset
 class AmbiguityDataset(Dataset):
     def __init__(self, data, tokenizer, max_len):
         self.data      = data
@@ -81,7 +81,7 @@ class AmbiguityDataset(Dataset):
         }
 
 
-# ── Training ─────────────────────────────────────────────────────────────────
+# Training
 def train():
     print("=" * 60)
     print("  ArthaBot — Transformer Training")

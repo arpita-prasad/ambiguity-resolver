@@ -17,10 +17,10 @@ from pydantic import BaseModel
 from transformers import BertTokenizer, BertForSequenceClassification
 import os
 
-# ── Config ───────────────────────────────────────────────────────────────────
+# Config
 MODEL_PATH = "saved_model"
 MAX_LEN    = 128
-THRESHOLD  = 0.35   # Sigmoid score above this = label is present
+THRESHOLD  = 0.35 
 NUM_LABELS = 8
 
 # Full metadata for each ambiguity type
@@ -67,7 +67,7 @@ AMBIGUITY_META = {
     },
 }
 
-# ── Load model ───────────────────────────────────────────────────────────────
+# Load model
 print("Loading model from", MODEL_PATH)
 if not os.path.exists(MODEL_PATH):
     raise RuntimeError(
@@ -87,7 +87,7 @@ with open(os.path.join(MODEL_PATH, "label_names.json")) as f:
 print(f"✓ Model loaded on {device}")
 print(f"✓ Labels: {LABEL_NAMES}")
 
-# ── App ───────────────────────────────────────────────────────────────────────
+# App
 app = FastAPI(
     title="ArthaBot API",
     description="Hindi/Hinglish Ambiguity Detection using Transformer",
@@ -96,7 +96,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],      # In prod, restrict to your frontend URL
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
