@@ -1,0 +1,341 @@
+[
+  {
+    "sentence": "वो आम खाता है",
+    "labels": [1, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["LEXICAL AMBIGUITY"],
+    "explanations": {
+      "LEXICAL AMBIGUITY": "The word 'आम' means both 'mango' (fruit) and 'common/ordinary'. Without context, both readings are valid."
+    },
+    "possible_meanings": [
+      "He eats mango.",
+      "He does common/ordinary things."
+    ],
+    "most_likely": "He eats mango — the fruit-eating interpretation is more natural in everyday speech.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "मैंने उसे देखा जब वो बाजार में था",
+    "labels": [0, 0, 0, 0, 1, 0, 0, 0],
+    "ambiguity_types": ["REFERENTIAL AMBIGUITY"],
+    "explanations": {
+      "REFERENTIAL AMBIGUITY": "The pronoun 'उसे' and 'वो' are both third-person references, but it is unclear who 'he' refers to — the person seen or someone else in the market."
+    },
+    "possible_meanings": [
+      "I saw him when he was in the market (same person).",
+      "I saw him (person A) when he (person B) was in the market."
+    ],
+    "most_likely": "I saw him when he (same person) was in the market.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "राम और श्याम की बहन आई",
+    "labels": [0, 1, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["SYNTACTIC AMBIGUITY"],
+    "explanations": {
+      "SYNTACTIC AMBIGUITY": "The possessive 'की' is ambiguous — it can attach to 'श्याम' only or to 'राम और श्याम' together. This is a coordination ambiguity."
+    },
+    "possible_meanings": [
+      "Ram's sister and Shyam's sister both came (two sisters).",
+      "The sister of both Ram and Shyam came (one shared sister)."
+    ],
+    "most_likely": "Ambiguous — both readings are equally valid without context.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "कल मैं नहीं आऊंगा",
+    "labels": [0, 0, 0, 0, 0, 1, 0, 0],
+    "ambiguity_types": ["SCOPE AMBIGUITY"],
+    "explanations": {
+      "SCOPE AMBIGUITY": "'कल' (tomorrow) and 'नहीं' (negation) have unclear scope. It is ambiguous whether the negation applies to coming tomorrow specifically or to coming at all."
+    },
+    "possible_meanings": [
+      "Tomorrow I will not come (but I may come on another day).",
+      "I will not come tomorrow (strong refusal with emphasis on tomorrow)."
+    ],
+    "most_likely": "Tomorrow I will not come — the most common conversational interpretation.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "Usne apni car mein unhe choda",
+    "labels": [0, 0, 0, 1, 0, 0, 0, 0],
+    "ambiguity_types": ["PRAGMATIC AMBIGUITY"],
+    "explanations": {
+      "PRAGMATIC AMBIGUITY": "The verb 'choda' in Hinglish is phonologically ambiguous — it can mean 'dropped off/gave a ride' (छोड़ा) or carry a vulgar connotation (छोदा) depending on speaker intent and context."
+    },
+    "possible_meanings": [
+      "He dropped them off in his car (gave a ride).",
+      "Vulgar interpretation due to phonological similarity."
+    ],
+    "most_likely": "He dropped them off in his car — the neutral transportation meaning is most likely in polite conversation.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "उसने कहा कि वो जाएगा",
+    "labels": [0, 0, 0, 0, 1, 0, 0, 0],
+    "ambiguity_types": ["REFERENTIAL AMBIGUITY"],
+    "explanations": {
+      "REFERENTIAL AMBIGUITY": "'वो' in the subordinate clause can refer to either the subject 'उसने' (he himself) or a different third person."
+    },
+    "possible_meanings": [
+      "He said that he (himself) will go.",
+      "He said that someone else will go."
+    ],
+    "most_likely": "He said that he himself will go — reflexive interpretation is most common.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "मुझे पता नहीं था कि वो क्या करेगा",
+    "labels": [0, 0, 0, 0, 0, 1, 0, 0],
+    "ambiguity_types": ["SCOPE AMBIGUITY"],
+    "explanations": {
+      "SCOPE AMBIGUITY": "The negation 'नहीं' can scope over 'पता' (didn't know) or over the entire embedded clause (knew but not what)."
+    },
+    "possible_meanings": [
+      "I had no idea what he would do (total ignorance).",
+      "I knew something but not specifically what he would do."
+    ],
+    "most_likely": "I had no idea what he would do.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "वो बहुत हल्का है",
+    "labels": [1, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["LEXICAL AMBIGUITY"],
+    "explanations": {
+      "LEXICAL AMBIGUITY": "'हल्का' can mean 'lightweight' (physical weight), 'light-colored', or 'trivial/not serious' depending on context."
+    },
+    "possible_meanings": [
+      "It/he is very lightweight (physical).",
+      "It is very light-colored.",
+      "It is very trivial/not serious."
+    ],
+    "most_likely": "Context-dependent — all three meanings are equally valid.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "मैं कल आया था",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 1],
+    "ambiguity_types": ["MORPHOLOGICAL AMBIGUITY"],
+    "explanations": {
+      "MORPHOLOGICAL AMBIGUITY": "'कल' as a morpheme is temporally symmetric — it means both 'yesterday' and 'tomorrow' in Hindi. Only the tense of 'आया था' (past) resolves it to 'yesterday' here."
+    },
+    "possible_meanings": [
+      "I had come yesterday.",
+      "Without tense context, 'कल' alone is ambiguous between yesterday and tomorrow."
+    ],
+    "most_likely": "I had come yesterday — resolved by the past tense verb.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "क्या तुम यहाँ रहते हो",
+    "labels": [0, 0, 0, 1, 0, 0, 0, 0],
+    "ambiguity_types": ["PRAGMATIC AMBIGUITY"],
+    "explanations": {
+      "PRAGMATIC AMBIGUITY": "This question can be a genuine inquiry about residence or an indirect speech act implying 'you should help me since you live nearby' or even sarcasm."
+    },
+    "possible_meanings": [
+      "A genuine question: Do you live here?",
+      "Indirect implication: Since you live here, you should know/help.",
+      "Sarcastic: You act as if you own the place."
+    ],
+    "most_likely": "A genuine question about residence in most neutral contexts.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "सब लोग नहीं आए",
+    "labels": [0, 0, 0, 0, 0, 1, 0, 0],
+    "ambiguity_types": ["SCOPE AMBIGUITY"],
+    "explanations": {
+      "SCOPE AMBIGUITY": "Quantifier 'सब' (all) and negation 'नहीं' have ambiguous scope: not all came, OR all did not come (none came)."
+    },
+    "possible_meanings": [
+      "Not all people came (some came, some didn't).",
+      "All people did not come (nobody came)."
+    ],
+    "most_likely": "Not all people came — partial negation is the more natural reading.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "उसकी आँखें बोलती हैं",
+    "labels": [0, 0, 1, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["SEMANTIC AMBIGUITY"],
+    "explanations": {
+      "SEMANTIC AMBIGUITY": "The phrase is semantically ambiguous between literal meaning (eyes literally speak) and metaphorical meaning (eyes are expressive). The semantic interpretation depends on figurative vs literal reading."
+    },
+    "possible_meanings": [
+      "Literal (impossible): Her eyes literally speak/talk.",
+      "Metaphorical: Her eyes are very expressive."
+    ],
+    "most_likely": "Metaphorical — her eyes are very expressive.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "mera dil toot gaya",
+    "labels": [0, 0, 1, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["SEMANTIC AMBIGUITY"],
+    "explanations": {
+      "SEMANTIC AMBIGUITY": "'दिल टूटना' is semantically ambiguous between literal (heart broke physically) and idiomatic (heartbreak/emotional pain). The semantic meaning depends on figurative interpretation."
+    },
+    "possible_meanings": [
+      "Literal: My heart physically broke.",
+      "Idiomatic: I am heartbroken / emotionally devastated."
+    ],
+    "most_likely": "Idiomatic — I am heartbroken.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "उसने नमक डाला",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": [],
+    "explanations": {},
+    "possible_meanings": [
+      "He/she added salt."
+    ],
+    "most_likely": "He/she added salt — clear, unambiguous sentence.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "राम घर गया",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": [],
+    "explanations": {},
+    "possible_meanings": [
+      "Ram went home."
+    ],
+    "most_likely": "Ram went home — clear, unambiguous sentence.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "पानी लाओ",
+    "labels": [0, 0, 0, 1, 0, 0, 0, 0],
+    "ambiguity_types": ["PRAGMATIC AMBIGUITY"],
+    "explanations": {
+      "PRAGMATIC AMBIGUITY": "The imperative 'पानी लाओ' can be a command, a polite request, or an urgent plea depending entirely on the speaker's tone and context."
+    },
+    "possible_meanings": [
+      "Command: Bring water (now).",
+      "Polite request: Please bring some water.",
+      "Urgent plea: Bring water quickly (emergency)."
+    ],
+    "most_likely": "A direct request to bring water — exact pragmatic force depends on tone.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "kya woh aayega",
+    "labels": [0, 0, 0, 1, 0, 0, 0, 0],
+    "ambiguity_types": ["PRAGMATIC AMBIGUITY"],
+    "explanations": {
+      "PRAGMATIC AMBIGUITY": "This can be a genuine question, a rhetorical doubt, or an indirect expression of hope or worry about someone coming."
+    },
+    "possible_meanings": [
+      "Genuine question: Will he come?",
+      "Rhetorical doubt: I wonder if he will come (skepticism).",
+      "Hopeful: Do you think he will come? (indirect hope)"
+    ],
+    "most_likely": "A genuine question asking whether he will come.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "उस पर्वत पर बादल थे जो बहुत ऊँचा था",
+    "labels": [0, 1, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["SYNTACTIC AMBIGUITY"],
+    "explanations": {
+      "SYNTACTIC AMBIGUITY": "The relative clause 'जो बहुत ऊँचा था' can attach to 'पर्वत' (the mountain was very high) or to 'बादल' (the clouds were very high). This is a classic PP/relative clause attachment ambiguity."
+    },
+    "possible_meanings": [
+      "On that very high mountain, there were clouds.",
+      "On that mountain, there were very high clouds."
+    ],
+    "most_likely": "On that very high mountain, there were clouds — attachment to mountain is more natural.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "usne usse maara",
+    "labels": [0, 0, 0, 0, 1, 0, 0, 0],
+    "ambiguity_types": ["REFERENTIAL AMBIGUITY"],
+    "explanations": {
+      "REFERENTIAL AMBIGUITY": "'उसने' and 'उसे' are both third-person pronouns with no clear antecedent established. Who hit whom is entirely unclear without prior context."
+    },
+    "possible_meanings": [
+      "He/she (A) hit him/her (B).",
+      "He/she (B) hit him/her (A) — depending on who 'usne' refers to."
+    ],
+    "most_likely": "Cannot be resolved without prior discourse context establishing referents.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "kal ka kaam kal karo",
+    "labels": [0, 0, 0, 0, 0, 0, 1, 0],
+    "ambiguity_types": ["PHONOLOGICAL AMBIGUITY"],
+    "explanations": {
+      "PHONOLOGICAL AMBIGUITY": "In this Hinglish/transliterated form, 'kal' appears twice with the same phonological form but means different things — 'yesterday's work' and 'do it tomorrow'. The word 'कल' is a phonological homonym meaning both yesterday and tomorrow."
+    },
+    "possible_meanings": [
+      "Do yesterday's work tomorrow (procrastination advice).",
+      "Do tomorrow's work tomorrow (do not rush)."
+    ],
+    "most_likely": "Intentionally paradoxical — 'Do yesterday's work tomorrow' as a humorous or philosophical statement.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "वो लड़की जो वहाँ खड़ी है मेरी बहन है",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": [],
+    "explanations": {},
+    "possible_meanings": [
+      "That girl who is standing there is my sister."
+    ],
+    "most_likely": "That girl who is standing there is my sister — unambiguous.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "मेरी माँ और बाप की तस्वीर",
+    "labels": [0, 1, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": ["SYNTACTIC AMBIGUITY"],
+    "explanations": {
+      "SYNTACTIC AMBIGUITY": "Coordination ambiguity: 'की तस्वीर' can scope over just 'बाप' (a picture of father, and separately mother) or over 'माँ और बाप' together (a picture of both mother and father together)."
+    },
+    "possible_meanings": [
+      "A picture of my mother, and a picture of my father (two separate pictures).",
+      "A picture of my mother and father together (one picture)."
+    ],
+    "most_likely": "A picture of my mother and father together — joint possession reading is most natural.",
+    "language": "Hindi"
+  },
+  {
+    "sentence": "bachcha khela",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 1],
+    "ambiguity_types": ["MORPHOLOGICAL AMBIGUITY"],
+    "explanations": {
+      "MORPHOLOGICAL AMBIGUITY": "'खेला' can be morphologically analyzed as: (1) verb past tense 'played', or (2) nominal form 'a game/play'. The word form is identical but morphological category differs."
+    },
+    "possible_meanings": [
+      "The child played (verb: past tense).",
+      "The child's game/play (nominal use)."
+    ],
+    "most_likely": "The child played — verbal past tense reading is most common.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "aaj mausam bahut accha hai",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": [],
+    "explanations": {},
+    "possible_meanings": [
+      "The weather is very good today."
+    ],
+    "most_likely": "The weather is very good today — unambiguous.",
+    "language": "Hinglish"
+  },
+  {
+    "sentence": "उसने सेब खाया",
+    "labels": [0, 0, 0, 0, 0, 0, 0, 0],
+    "ambiguity_types": [],
+    "explanations": {},
+    "possible_meanings": [
+      "He/she ate the apple."
+    ],
+    "most_likely": "He/she ate the apple — unambiguous.",
+    "language": "Hindi"
+  }
+]
