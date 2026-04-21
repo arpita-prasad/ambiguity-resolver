@@ -3,3 +3,15 @@ dist/
 .env
 .env.local
 .DS_Store
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# ML / Data
+arthabot-backend/saved_model/
+arthabot-backend/data/
+
+# Frontend
+hindi-ambiguity-resolver/node_modules/
