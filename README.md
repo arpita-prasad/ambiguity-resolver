@@ -26,14 +26,14 @@ ArthaBot is a full-stack NLP application that detects and explains **all 8 types
 
 | # | Type | Example in Hindi |
 |---|------|-----------------|
-| 1 | **Lexical Ambiguity** | *वो आम खाता है* — 'आम' = mango OR common |
-| 2 | **Syntactic Ambiguity** | *राम और श्याम की बहन आई* — whose sister? |
-| 3 | **Semantic Ambiguity** | *उसकी आँखें बोलती हैं* — literal or figurative? |
-| 4 | **Pragmatic Ambiguity** | *पानी लाओ* — command, request, or plea? |
-| 5 | **Referential Ambiguity** | *उसने उसे देखा* — who saw whom? |
-| 6 | **Scope Ambiguity** | *सब लोग नहीं आए* — some or none? |
-| 7 | **Phonological Ambiguity** | *Usne unhe choda* — transliteration ambiguity |
-| 8 | **Morphological Ambiguity** | *खेला* — verb (played) or noun (a game)? |
+| 1 | **Lexical Ambiguity** | *वो आम खाता है* – 'आम' = mango OR common |
+| 2 | **Syntactic Ambiguity** | *राम और श्याम की बहन आई* – whose sister? |
+| 3 | **Semantic Ambiguity** | *उसकी आँखें बोलती हैं* – literal or figurative? |
+| 4 | **Pragmatic Ambiguity** | *पानी लाओ* – command, request, or plea? |
+| 5 | **Referential Ambiguity** | *उसने उसे देखा* – who saw whom? |
+| 6 | **Scope Ambiguity** | *सब लोग नहीं आए* – some or none? |
+| 7 | **Phonological Ambiguity** | *Usne unhe choda* – transliteration ambiguity |
+| 8 | **Morphological Ambiguity** | *खेला* – verb (played) or noun (a game)? |
 
 ---
 
@@ -323,14 +323,3 @@ Label vector index → ambiguity type:
 - Single-sentence analysis – no cross-sentence referential resolution
 - CPU inference only by default – add `.to("cuda")` calls for GPU support
 - Rule-based meaning generation – templates rather than generative explanations
-
----
-
-## Future Work
-
-- [ ] Expand dataset to 500+ examples across Hindi dialects
-- [ ] Replace mBERT with **IndicBERT** or **MuRIL** for better Hindi performance
-- [ ] Add generative explanations using mT5 or IndicBART
-- [ ] Support multi-sentence / discourse-level analysis
-- [ ] Add active learning pipeline for continuous improvement
-- [ ] Deploy backend to Railway / Render for public access
