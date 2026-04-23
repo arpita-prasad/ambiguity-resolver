@@ -118,7 +118,7 @@ arthabot/
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/arthabot.git
+git clone https://github.com/arpita-prasad/ambiguity-resolver.git
 cd arthabot
 ```
 
